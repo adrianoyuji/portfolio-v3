@@ -12,17 +12,28 @@ const CertificationItem = ({
   certificate_link,
 }: Certificate) => {
   return (
-    <Box display="flex" flexDir="column" my="1">
-      <Box display="flex" flexDir="row">
-        <Text color="neonBlue" pr="1" pt="1">
+    <Box display="flex" flexDir="column" my="2">
+      <Box display="flex" flexDir={{ base: "column", md: "row" }}>
+        <Text
+          color="neonBlue"
+          pr="1"
+          pt="1"
+          display={{ base: "none", md: "block" }}
+        >
           <BsDot size="1.25rem" />
         </Text>
-        <Text as="h3" fontSize="xl" color="gray.200">
+        <Text as="h3" fontSize={{ base: "lg", md: "xl" }} color="gray.200">
           {title}
         </Text>
         <Text as="h4">
           <Link href={institution_url} passHref>
-            <Text fontSize="xl" pl="2" color="neonBlue" as="a" target="_blank">
+            <Text
+              fontSize={{ base: "lg", md: "xl" }}
+              pl={{ base: "0", md: "2" }}
+              color="neonBlue"
+              as="a"
+              target="_blank"
+            >
               @ {institution_name}
             </Text>
           </Link>
@@ -31,7 +42,7 @@ const CertificationItem = ({
       <Text
         color="gray.400"
         as="p"
-        ml="5"
+        ml={{ base: "0", md: "5" }}
         display="inline-flex"
         flexDir="row"
         alignItems="center"

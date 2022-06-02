@@ -4,7 +4,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <Box flex="2.5">
+    <Box flex="2.5" display="flex" alignItems="center">
       <Link href="#top" passHref>
         <Text
           as="a"

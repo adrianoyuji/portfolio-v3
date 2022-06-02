@@ -21,7 +21,7 @@ const SectionNumber = ({ number, sectionName }: SectionNumberProps) => {
           {number}.
         </Text>
       )}
-      <Text fontSize="2xl" color="gray.200">
+      <Text fontSize="2xl" color="gray.200" textAlign="center">
         {sectionName}
       </Text>
       <Box w="10%" h="1px" background="gray.600" ml="4" />

@@ -4,7 +4,11 @@ import React from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 
-const Header = () => {
+interface Props {
+  onOpenDrawer: () => void;
+}
+
+const Header = ({ onOpenDrawer }: Props) => {
   return (
     <Box
       backdropFilter="blur(10px)"
@@ -15,12 +19,12 @@ const Header = () => {
       w="100vw"
       top="0"
       left="0"
-      zIndex="9999"
+      zIndex="100"
     >
       <Section id="top" direction="row" as="div">
         <Box w="100%" display="flex" flexDirection="row">
           <Logo />
-          <NavBar />
+          <NavBar onOpenDrawer={onOpenDrawer} />
         </Box>
       </Section>
     </Box>

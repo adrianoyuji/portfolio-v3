@@ -1,6 +1,7 @@
-import { Box } from "@chakra-ui/react";
+import { Box, useDisclosure } from "@chakra-ui/react";
 import About from "components/About";
 import Contact from "components/Contact";
+import DrawerComponent from "components/Drawer/Drawer";
 import Education from "components/Education";
 import Experience from "components/Experience";
 import Footer from "components/Footer";
@@ -11,13 +12,15 @@ import Portfolio from "components/Portfolio";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure(); //Drawer
+
   return (
     <>
       <HeadTag
         title="Adriano Yuji | Frontend Engineer"
         description="Hey there"
       />
-      <Header />
+      <Header onOpenDrawer={onOpen} />
       <Box as="main" bgColor="background">
         <HeadingBanner />
         <About />
@@ -27,6 +30,7 @@ const Home: NextPage = () => {
         <Contact />
         <Footer />
       </Box>
+      <DrawerComponent isOpen={isOpen} onClose={onClose} />
     </>
   );
 };

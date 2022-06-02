@@ -17,8 +17,8 @@ const ExperienceItem = ({
       <Text
         fontSize="xl"
         display="flex"
-        flexDir="row"
-        alignItems="center"
+        flexDir={{ base: "column", md: "row" }}
+        alignItems={{ base: "flex-start", md: "center" }}
         as="h3"
       >
         <Text as="span" color="gray.200">

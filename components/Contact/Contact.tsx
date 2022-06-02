@@ -38,7 +38,7 @@ const Contact = () => {
           my="4"
         >
           I am looking for international opportunities to work remote or
-          on-site! Feel free to contact me through any of the channels below:
+          on-site! Feel free to contact me through any of the channels below
         </Text>
         <Box
           mt="4"

@@ -20,8 +20,8 @@ const About = () => {
   return (
     <Section id="about" direction="column">
       <SectionNumber number="01" sectionName="About me" />
-      <Box display="flex" flexDir="row" mt="8">
-        <Box flex="1" display="flex" flexDir="column" color="gray.200">
+      <Box display="flex" flexDir={{ base: "column", md: "row" }} mt="8">
+        <Box flex="1.5" display="flex" flexDir="column" color="gray.200">
           <Text as="p" mb="4">
             Hello! My name is Adriano Yuji Sato de Vasconcelos, I'm a Frontend
             Engineer that loves to solve problems! I started my journey in
@@ -57,10 +57,16 @@ const About = () => {
             ))}
           </Box>
         </Box>
-        <Box flex="1" display="flex" flexDir="column" alignItems="center">
+        <Box
+          flex="1"
+          display="flex"
+          flexDir="column"
+          alignItems={{ base: "center", md: "flex-end" }}
+        >
           <Box
-            h="360px"
-            w="360px"
+            mt={{ base: "10", md: "0" }}
+            h={{ base: "256px", md: "360px" }}
+            w={{ base: "256px", md: "360px" }}
             position="relative"
             borderRadius="3xl"
             overflow="hidden"

@@ -8,7 +8,7 @@ import CertificationItem from "./CertificationItem";
 const Education = () => {
   return (
     <Section id="education" direction="column">
-      <SectionNumber sectionName="Education and Certificates" />
+      <SectionNumber sectionName="Education" />
       <Box display="flex" flexDir="column" mt="8">
         {certifications.map((certificate, index) => (
           <CertificationItem {...certificate} key={`certification-${index}`} />

@@ -26,10 +26,10 @@ const HeadingBanner = () => {
       <FadeUpTag delayMS="1200">
         <Text
           mt="4"
-          lineHeight="96px"
+          lineHeight={{ base: "64px", md: "96px" }}
           as="h2"
           color="gray.200"
-          fontSize="8xl"
+          fontSize={{ base: "5xl", md: "8xl" }}
           fontWeight={"bold"}
         >
           Adriano Yuji.
@@ -37,10 +37,10 @@ const HeadingBanner = () => {
       </FadeUpTag>
       <FadeUpTag delayMS="1400">
         <Text
-          lineHeight="80px"
+          lineHeight={{ base: "40px", md: "80px" }}
           as="h3"
           color="gray.500"
-          fontSize="6xl"
+          fontSize={{ base: "2xl", md: "6xl" }}
           fontWeight={"bold"}
           mb="4"
         >
@@ -58,7 +58,7 @@ const HeadingBanner = () => {
           as="a"
           position="absolute"
           bottom="64px"
-          right="50%"
+          right="47.5%"
           animation="bounce 1.5s ease-in-out infinite"
         >
           <BsChevronDown color="white" size="1.5rem" />

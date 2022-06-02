@@ -32,7 +32,7 @@ const ProjectItem = ({
           as="a"
           mb="2"
           position="relative"
-          height={256}
+          height={{ base: 196, md: 256 }}
           w="100%"
           className="roundedImage"
           overflow="hidden"
@@ -52,20 +52,29 @@ const ProjectItem = ({
           <a target="_blank">{title}</a>
         </Link>
       </Text>
-      <Box display="flex" flexDir="row" alignItems="center">
+      <Box
+        display="flex"
+        flexDir={{ base: "column", md: "row" }}
+        alignItems="center"
+      >
         <Text color="neonBlue">@{company_name}</Text>
         <Text fontSize="sm" pl="4" fontFamily="SF Mono Light" color="gray.400">
           {duration}
         </Text>
       </Box>
-      <HStack display="flex" flexDir="row" my="2">
+      <HStack
+        display="flex"
+        flexDir="row"
+        flexWrap="wrap"
+        justifyContent={"center"}
+      >
         {technologies.map((tech) => (
-          <Tag size="sm" variant="outline" color="neonBlue" key={tech}>
+          <Tag my="2" size="sm" variant="outline" color="neonBlue" key={tech}>
             {tech}
           </Tag>
         ))}
       </HStack>
-      <Text color="gray.400" as="p">
+      <Text color="gray.400" as="p" mt="2">
         {description.heading}
       </Text>
       {description.bullets && (
