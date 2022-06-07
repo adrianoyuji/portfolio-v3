@@ -23,7 +23,7 @@ const Section = ({
       display="flex"
       as={as}
       px="4"
-      py={{ base: "5", md: "8" }}
+      py="5"
       maxW="container.lg"
       flexDirection={direction}
     >

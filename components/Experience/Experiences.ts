@@ -14,7 +14,7 @@ export interface Experience {
   position: string;
   duration: string;
   description: Description;
-  availability: "Full-time" | "Part-time" | "Freelance" | "Intern";
+  availability: "Full-time" | "Part-time" | "Freelance" | "Internship";
 }
 
 const experiences: Experience[] = [
@@ -52,7 +52,7 @@ const experiences: Experience[] = [
       heading:
         "TeachLearn is an EdTech plaftorm focused on evolving both personal and professional lifes of their users through online courses/events.",
       bullets: [
-        "I was responsible for developing a platform that allowed the school admins to register the attendees of said courses/events by uploading an Excel file so those attendees could generate and validate their certification.",
+        "I was responsible for developing a platform that allowed the school admins to register the attendees of said courses/events by uploading an Excel file so those attendees could generate and validate their certificates.",
         "I developed the Backend in Node.js with Express.js and JavaScript utilizing a Multi Tenant Database architecture with PostgreSQL's schemas feature to allow maximum performance and maintability to the code base.",
         "Developed the Frontend in React, NextJs and Typescript with a very robust library called Material UI that speed up the development process by proving easy and usable components to the platform.",
       ],
@@ -85,7 +85,7 @@ const experiences: Experience[] = [
     },
     position: "Frontend Software Developer",
     duration: "Feb 2020 - June 2020",
-    availability: "Intern",
+    availability: "Internship",
     description: {
       heading:
         "Web and Mobile JavaScript frontend developer. Experience with ReactJS and React Native and GIT as version controller.",

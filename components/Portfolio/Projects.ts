@@ -15,9 +15,8 @@ const projects: Project[] = [
         "I was the main responsible for developing and maintaing the new sales channel of Oi's main product, this website had to showcase all the details and information necessary to convince any customer to purchase the product.",
       bullets: [
         "The selected frontend technologies were TypeScript, React, NextJS, SASS and ContextAPI, in order to maximize page load performance.",
-        "Selected the best technologies and tools to meet the requirements of SEO, information security, accessibility and performance.",
         "Lead a team of 5 frontend developers delegating tasks, helping through difficulties and reviewing their output in order to achieve the best outcome.",
-        "A strong communication with the Product Owner was vital in order to extract the maximum amount of information in favor of delivering the expected product.",
+        "A strong communication with the Product Owner was vital in order to extract the maximum amount of information in favor of delivering the expected result.",
         "We achieved a website that is 4x faster to load than the previous legacy one using less resources on their cloud containers.",
       ],
     },
@@ -28,8 +27,17 @@ const projects: Project[] = [
     company_name: "Elumini Outdoing IT",
   },
   {
-    title: "Certification Generator",
-    description: { heading: "", bullets: [] },
+    title: "Certificate Generator",
+    description: {
+      heading:
+        "As the name implies, it's an application that generates and validates certificates of the many courses and events that TeachLearn offers.",
+      bullets: [
+        "As different organization and tutors would use this app, a multi-tenant architecture was necessary in order to improve API response times.",
+        "Fully functional role system, users and admins have different permissions.",
+        "The backend generated and stored the certificates as PDF files.",
+        "JWT tokens were used to ensure a safe authentication method.",
+      ],
+    },
     technologies: [
       "React",
       "TypeScript",
@@ -77,7 +85,6 @@ const projects: Project[] = [
         "I was responsible for evolving and maintaing this application in order to deliver new features that appeared as new clients needed them.",
         "Kept a close contact with most clients in order to understand what could be improved on the application to increase the software usability.",
         "Did minor NodeJS API development in order to speed software development of the squad.",
-        "Delivered features that clients trully needed in order to achieve a great user experience and solve the restaurant specific management challenges.",
       ],
     },
     technologies: [
@@ -112,7 +119,7 @@ const projects: Project[] = [
       "TypeScript",
     ],
     thumbnail: "/images/bistrodeliveryapp.png",
-    project_url: "",
+    project_url: "http://softwarebistro.com.br/",
     duration: "June 2020 - March 2021",
     company_name: "Software Bistrô",
   },

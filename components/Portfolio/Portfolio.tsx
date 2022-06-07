@@ -11,11 +11,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScreenChange = () => {
-      if (window.innerWidth > 768) {
-        setIsLargerThan768(true);
-      } else {
-        setIsLargerThan768(false);
-      }
+      setIsLargerThan768(window.innerWidth > 768);
     };
 
     handleScreenChange();
@@ -31,7 +27,7 @@ const Portfolio = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 8000,
-    arrows: false,
+    arrows: isLargerThan768,
   };
   return (
     <Section id="portfolio" direction="column" rest={{ overflow: "hidden" }}>

@@ -14,7 +14,7 @@ const certifications: Certificate[] = [
   },
   {
     title: "Web Programming with Python and JavaScript",
-    period: "October 2021 - December 2021",
+    period: "December 2021",
     institution_name: "Harvard's CS50w",
     institution_url: "https://cs50.harvard.edu/web/2020/",
     certificate_link:
@@ -22,7 +22,7 @@ const certifications: Certificate[] = [
   },
   {
     title: "React + Redux Course: Fundamentals from the Absolute Zero",
-    period: "July 2020 - September 2020",
+    period: "September 2020",
     institution_name: "Udemy by Cod3r",
     institution_url: "https://www.udemy.com/course/react-redux-pt/",
     certificate_link:
