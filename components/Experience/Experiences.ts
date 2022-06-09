@@ -50,11 +50,11 @@ const experiences: Experience[] = [
     availability: "Freelance",
     description: {
       heading:
-        "TeachLearn is an EdTech plaftorm focused on evolving both personal and professional lifes of their users through online courses/events.",
+        "TeachLearn is an EdTech platform focused on evolving both personal and professional lives of their users through online courses/events.",
       bullets: [
         "I was responsible for developing a platform that allowed the school admins to register the attendees of said courses/events by uploading an Excel file so those attendees could generate and validate their certificates.",
-        "I developed the Backend in Node.js with Express.js and JavaScript utilizing a Multi Tenant Database architecture with PostgreSQL's schemas feature to allow maximum performance and maintability to the code base.",
-        "Developed the Frontend in React, NextJs and Typescript with a very robust library called Material UI that speed up the development process by proving easy and usable components to the platform.",
+        "I developed the Backend in Node.js with Express.js and JavaScript utilizing a Multi Tenant Database architecture with PostgreSQL's schema feature to allow maximum performance and maintainability to the code base.",
+        "Developed the Frontend in React, NextJs and Typescript with a very robust library called Material UI that sped up the development process by proving easy and usable components to the platform.",
       ],
     },
   },

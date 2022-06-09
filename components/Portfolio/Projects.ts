@@ -32,7 +32,7 @@ const projects: Project[] = [
       heading:
         "As the name implies, it's an application that generates and validates certificates of the many courses and events that TeachLearn offers.",
       bullets: [
-        "As different organization and tutors would use this app, a multi-tenant architecture was necessary in order to improve API response times.",
+        "As different organizations and tutors would use this app, a multi-tenant architecture was necessary in order to improve API response times.",
         "Fully functional role system, users and admins have different permissions.",
         "The backend generated and stored the certificates as PDF files.",
         "JWT tokens were used to ensure a safe authentication method.",

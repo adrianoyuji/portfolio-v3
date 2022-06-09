@@ -28,33 +28,42 @@ const DrawerComponent = ({ onClose, isOpen }: Props) => {
           flexDir="column"
           justifyContent="center"
           alignItems="center"
+          as="nav"
         >
-          {navItems.map((item, index) => (
-            <Box as="li" key={item.label}>
-              <Link href={item.href} passHref>
-                <Text
-                  onClick={onClose}
-                  as="a"
-                  display="flex"
-                  flexDir="column"
-                  fontSize="md"
-                  color="gray.100"
-                  fontFamily="SF Mono Light"
-                  transition="all 0.25s ease"
-                  justifyContent="center"
-                  alignItems="center"
-                  _hover={{
-                    color: "neonBlue",
-                  }}
-                >
-                  <Text color="neonBlue" as="span" mr="1">
-                    0{index + 1}.
+          <Box
+            as="ul"
+            display="flex"
+            flexDir="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            {navItems.map((item, index) => (
+              <Box as="li" key={item.label} my="3">
+                <Link href={item.href} passHref>
+                  <Text
+                    onClick={onClose}
+                    as="a"
+                    display="flex"
+                    flexDir="column"
+                    fontSize="md"
+                    color="gray.100"
+                    fontFamily="SF Mono Light"
+                    transition="all 0.25s ease"
+                    justifyContent="center"
+                    alignItems="center"
+                    _hover={{
+                      color: "neonBlue",
+                    }}
+                  >
+                    <Text color="neonBlue" as="span" mr="1">
+                      0{index + 1}.
+                    </Text>
+                    {item.label}
                   </Text>
-                  {item.label}
-                </Text>
-              </Link>
-            </Box>
-          ))}
+                </Link>
+              </Box>
+            ))}
+          </Box>
         </DrawerBody>
       </DrawerContent>
     </Drawer>

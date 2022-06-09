@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import Section from "components/Section";
-import React from "react";
+import useScrollDirection from "hooks/useScrollDirection";
+import React, { useEffect } from "react";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 
@@ -9,6 +10,8 @@ interface Props {
 }
 
 const Header = ({ onOpenDrawer }: Props) => {
+  const scrollDirection = useScrollDirection({ initialDirection: "down" });
+
   return (
     <Box
       backdropFilter="blur(10px)"
@@ -20,6 +23,10 @@ const Header = ({ onOpenDrawer }: Props) => {
       top="0"
       left="0"
       zIndex="100"
+      transition="all 500ms ease-in-out"
+      transform={
+        scrollDirection === "down" ? "translate(0,-400px)" : "translate(0,0)"
+      }
     >
       <Section id="top" direction="row" as="div">
         <Box w="100%" display="flex" flexDirection="row">
