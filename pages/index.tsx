@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <>
       <HeadTag
         title="Adriano Yuji | Frontend Engineer"
-        description="Hey there"
+        description="I build responsive web pages, check my portfolio!"
       />
       <Header onOpenDrawer={onOpen} />
       <Box as="main" bgColor="background">
