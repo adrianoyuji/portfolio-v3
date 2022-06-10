@@ -28,7 +28,7 @@ const Header = ({ onOpenDrawer }: Props) => {
         scrollDirection === "down" ? "translate(0,-400px)" : "translate(0,0)"
       }
     >
-      <Section id="top" direction="row" as="div">
+      <Section id="header-container" direction="row" as="div">
         <Box w="100%" display="flex" flexDirection="row">
           <Logo />
           <NavBar onOpenDrawer={onOpenDrawer} />

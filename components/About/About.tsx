@@ -1,9 +1,10 @@
 import SectionNumber from "../SectionNumber/SectionNumber";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import Section from "components/Section";
 import React from "react";
 import { FaCaretRight } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const TechStack: string[] = [
   "JavaScript (ES6+)",
@@ -57,16 +58,11 @@ const About = () => {
             ))}
           </Box>
         </Box>
-        <Box
-          flex="1"
-          display="flex"
-          flexDir="column"
-          alignItems={{ base: "center", md: "flex-end" }}
-        >
+        <Box flex="1" display="flex" flexDir="column" alignItems="center">
           <Box
             mt={{ base: "10", md: "0" }}
-            h={{ base: "256px", md: "360px" }}
-            w={{ base: "256px", md: "360px" }}
+            h={{ base: "256px", md: "196px" }}
+            w={{ base: "256px", md: "196px" }}
             position="relative"
             borderRadius="3xl"
             overflow="hidden"
@@ -85,6 +81,22 @@ const About = () => {
               title="Adriano Yuji Profile Picture"
             />
           </Box>
+
+          <Link
+            href="/files/Adriano Vasconcelos - CV [EN] Frontend Dev.pdf"
+            passHref
+          >
+            <Button
+              variant="outline"
+              colorScheme="cyan"
+              mt="8"
+              title="Check my resume/CV"
+              as="a"
+              target="_blank"
+            >
+              Resume
+            </Button>
+          </Link>
         </Box>
       </Box>
     </Section>
