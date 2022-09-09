@@ -23,7 +23,7 @@ const projects: Project[] = [
     technologies: ["React", "TypeScript", "Next.js", "SASS", "SEO", "HTML"],
     thumbnail: "/images/portaloinovafibra.png",
     project_url: "https://www.oi.com.br/internet",
-    duration: "April 2021 - Present",
+    duration: "April 2021 - August 2022",
     company_name: "Elumini Outdoing IT",
   },
   {

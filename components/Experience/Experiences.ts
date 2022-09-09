@@ -20,12 +20,29 @@ export interface Experience {
 const experiences: Experience[] = [
   {
     company: {
+      href: "https://k2partnering.com/",
+      name: "K2 Partnering Solutions",
+      logo: "/images/elumini.jpeg",
+    },
+    position: "Frontend Developer",
+    duration: "August 2022 - Current",
+    availability: "Full-time",
+    description: {
+      heading: "Allocated at CrossKnowledge, a Wiley Brand.",
+      bullets: [
+        "Working in a multi cultural environment, with people of all around the world.",
+        "WIP",
+      ],
+    },
+  },
+  {
+    company: {
       href: "https://www.elumini.com.br/en/",
       name: "Elumini Outdoing IT",
       logo: "/images/elumini.jpeg",
     },
     position: "Frontend Developer",
-    duration: "April 2021 - Current",
+    duration: "April 2021 - August 2022",
     availability: "Full-time",
     description: {
       heading:
