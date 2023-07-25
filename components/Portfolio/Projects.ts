@@ -15,7 +15,7 @@ const projects: Project[] = [
         "I was the main responsible for developing and maintaing the new sales channel of Oi's main product, this website had to showcase all the details and information necessary to convince any customer to purchase the product.",
       bullets: [
         "The selected frontend technologies were TypeScript, React, NextJS, SASS and ContextAPI, in order to maximize page load performance.",
-        "Lead a team of 5 frontend developers delegating tasks, helping through difficulties and reviewing their output in order to achieve the best outcome.",
+        "Lead a team of 5 front-end developers delegating tasks, helping through difficulties and reviewing their output in order to achieve the best outcome.",
         "A strong communication with the Product Owner was vital in order to extract the maximum amount of information in favor of delivering the expected result.",
         "We achieved a website that is 4x faster to load than the previous legacy one using less resources on their cloud containers.",
       ],

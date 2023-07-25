@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   return (
     <>
       <HeadTag
-        title="Adriano Yuji | Frontend Engineer"
+        title="Adriano Yuji | Front-end Engineer"
         description="I build responsive web pages, check my portfolio!"
       />
       <Header onOpenDrawer={onOpen} />

@@ -20,18 +20,37 @@ export interface Experience {
 const experiences: Experience[] = [
   {
     company: {
+      href: "http://www.wiley.com",
+      name: "Wiley",
+      logo: "/images/wiley-john-and-sons.png",
+    },
+    position: "Front-end Developer",
+    duration: "April 2023 - Current",
+    availability: "Full-time",
+    description: {
+      heading: "An American multinational publishing company founded in 1807 that focuses on academic publishing and instructional material.",
+      bullets: [
+        "Developed functional and beautiful UIs using React, TypeScript, SASS, Git, Material UI, Redux Toolkit, Unit Testing with Jest and RTL, and many other tools.",
+        "Worked on a Education Platform with thousands of active users, adding and improving features to enhance the Learning experience.",
+        "Worldwide collaboration with USA, Europe and Brazil offices, mainly in English.",
+      ],
+    },
+  },
+  {
+    company: {
       href: "https://k2partnering.com/",
       name: "K2 Partnering Solutions",
       logo: "/images/elumini.jpeg",
     },
-    position: "Frontend Developer",
-    duration: "August 2022 - Current",
+    position: "Front-end Developer",
+    duration: "August 2022 - March 2023",
     availability: "Full-time",
     description: {
       heading: "Allocated at CrossKnowledge, a Wiley Brand.",
       bullets: [
-        "Working in a multi cultural environment, with people of all around the world.",
-        "WIP",
+        "Multicultural environment with the communication being exclusively in English.",
+        "Tools like Jira and Confluence are used to help manage the main agile methodology SCRUM",
+        "Front-end Heavy development, using technologies like React, TypeScript, SASS, Git, Material UI, MobX, Unit Testing with Jest and RTL, and many other tools",
       ],
     },
   },
@@ -41,7 +60,7 @@ const experiences: Experience[] = [
       name: "Elumini Outdoing IT",
       logo: "/images/elumini.jpeg",
     },
-    position: "Frontend Developer",
+    position: "Front-end Developer",
     duration: "April 2021 - August 2022",
     availability: "Full-time",
     description: {
@@ -71,7 +90,7 @@ const experiences: Experience[] = [
       bullets: [
         "I was responsible for developing a platform that allowed the school admins to register the attendees of said courses/events by uploading an Excel file so those attendees could generate and validate their certificates.",
         "I developed the Backend in Node.js with Express.js and JavaScript utilizing a Multi Tenant Database architecture with PostgreSQL's schema feature to allow maximum performance and maintainability to the code base.",
-        "Developed the Frontend in React, NextJs and Typescript with a very robust library called Material UI that sped up the development process by proving easy and usable components to the platform.",
+        "Developed the Front-end in React, NextJs and Typescript with a very robust library called Material UI that sped up the development process by proving easy and usable components to the platform.",
       ],
     },
   },
@@ -100,12 +119,12 @@ const experiences: Experience[] = [
       name: "Software Bistrô",
       logo: "/images/softwarebistro.jpeg",
     },
-    position: "Frontend Software Developer",
+    position: "Front-end Software Developer",
     duration: "Feb 2020 - June 2020",
     availability: "Internship",
     description: {
       heading:
-        "Web and Mobile JavaScript frontend developer. Experience with ReactJS and React Native and GIT as version controller.",
+        "Web and Mobile JavaScript front-end developer. Experience with ReactJS and React Native and GIT as version controller.",
       bullets: [
         "Worked with a small team of 3 developers and used SCRUM and Kanban as agile methodologies.",
         "Developed an Android Application from scratch using JavaScript and React Native, and some Java modules when needed.",

@@ -24,7 +24,7 @@ const About = () => {
       <Box display="flex" flexDir={{ base: "column", md: "row" }} mt="8">
         <Box flex="1.5" display="flex" flexDir="column" color="gray.200">
           <Text as="p" mb="4">
-            Hello! My name is Adriano Yuji Sato de Vasconcelos, I'm a Frontend
+            Hello! My name is Adriano Yuji Sato de Vasconcelos, I'm a Front-end
             Engineer that loves to solve problems! I started my journey in
             programming back in 2014, when I wrote simple scripts for a
             videogame I used to play.

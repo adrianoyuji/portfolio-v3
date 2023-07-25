@@ -49,7 +49,7 @@ const HeadingBanner = () => {
       </FadeUpTag>
       <FadeUpTag delayMS="1600">
         <Text as="p" color="gray.300">
-          I'm a Frontend Engineer specialized in building responsive and usable
+          I'm a Front-end Engineer specialized in building responsive and usable
           digital solutions.
         </Text>
       </FadeUpTag>
